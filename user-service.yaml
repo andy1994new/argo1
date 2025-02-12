@@ -35,31 +35,31 @@ spec:
       containers:
 
       - name: user-service
-        image: andy2025/user-service:23f5981
+        image: andy2025/user-service:c2852b8
         ports:
         - containerPort: 8080
 
         env:
           - name: SPRING_DATASOURCE_USERNAME
             valueFrom:
-              secretKeyRef:
-                name: db-credentials
+              configMapRef:
+                name: db-config
                 key: username
 
           - name: SPRING_DATASOURCE_PASSWORD
             valueFrom:
-              secretKeyRef:
-                name: db-credentials
+              configMapRef:
+                name: db-config
                 key: password
         
           - name: DB_ENDPOINT
             valueFrom:
-              secretKeyRef:
-                name: db-credentials
+              configMapRef:
+                name: db-config
                 key: endpoint
                 
           - name: DB_NAME
             valueFrom:
-              secretKeyRef:
-                name: db-credentials
+              configMapRef:
+                name: db-config
                 key: dbname
