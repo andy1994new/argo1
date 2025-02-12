@@ -33,11 +33,8 @@ spec:
     spec:
       containers:
       - name: order-service
-<<<<<<< HEAD
         image: andy2025/order-service:c2852b8
-=======
-        image: andy2025/order_service:15e46d7
->>>>>>> df287ce8cc727088f0159549f23b5ba85147e24c
+
         ports:
         - containerPort: 8082
 
