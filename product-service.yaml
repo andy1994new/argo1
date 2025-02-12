@@ -35,7 +35,7 @@ spec:
       containers:
 
       - name: product-service
-        image: andy2025/product-service:a1205d5
+        image: andy2025/product-service:24b81c4
         ports:
         - containerPort: 8081
 
