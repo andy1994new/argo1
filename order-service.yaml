@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: order-service
-        image: andy2025/order-service:ff8b138
+        image: andy2025/order-service:e32bfad
         ports:
         - containerPort: 8082
 
